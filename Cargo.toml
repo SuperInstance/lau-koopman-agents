@@ -1,6 +1,17 @@
 [package]
 name = "lau-koopman-agents"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
+description = "Koopman operator theory for dynamical systems and agent learning"
+license = "MIT"
+repository = "https://github.com/SuperInstance/lau-koopman-agents"
+keywords = ["koopman", "dmd", "dynamical-systems", "agents"]
+categories = ["science", "mathematics"]
 
 [dependencies]
+nalgebra = { version = "0.33", features = ["serde-serialize"] }
+num-complex = "0.4"
+serde = { version = "1", features = ["derive"] }
+
+[dev-dependencies]
+approx = "0.5"
